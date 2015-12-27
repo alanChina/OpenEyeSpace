@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ViewController imageToTransparent:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "ptr[2]">
+            </PersistentString>
+            <PersistentString
+               value = "ptr[0]">
+            </PersistentString>
+            <PersistentString
+               value = "ptr[3]">
+            </PersistentString>
+            <PersistentString
+               value = "ptr[1]">
+            </PersistentString>
+            <PersistentString
+               value = "ptr[6]">
+            </PersistentString>
+            <PersistentString
+               value = "ptr[4]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate imageToTransparent:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "*pCurPtr &amp; 0x65815A00">
+            </PersistentString>
+            <PersistentString
+               value = "*pCurPtr &amp; 0x00FF0000">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

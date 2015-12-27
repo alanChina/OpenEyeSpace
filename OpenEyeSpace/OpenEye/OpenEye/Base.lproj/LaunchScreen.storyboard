@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lobster 1.4.otf">
+            <string>Lobster1.4</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B41-Gv-P7O">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_BKG" translatesAutoresizingMaskIntoConstraints="NO" id="W53-8V-sM3">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="667"/>
+                                    </imageView>
+                                    <view tag="201" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-05-sWE" userLabel="logoView">
+                                        <rect key="frame" x="131" y="261" width="120" height="146"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-60" translatesAutoresizingMaskIntoConstraints="NO" id="mgm-DL-q7T">
+                                                <rect key="frame" x="35" y="19" width="60" height="60"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-PV-maE">
+                                                <rect key="frame" x="24" y="85" width="73" height="45"/>
+                                                <string key="text">OpenEye
+开眼</string>
+                                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hul-KB-spU" userLabel="bottomText">
+                                        <rect key="frame" x="20" y="580" width="343" height="79"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="cmQ-AR-vZl"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Labelasdfasdfasdfasdfasdfasdfasd
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="16" name="CourierNewPSMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="每日推出精选视频，让你大开眼界">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="16" name="STHeitiSC-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="W53-8V-sM3" firstAttribute="top" secondItem="B41-Gv-P7O" secondAttribute="top" id="1x5-qk-hEP"/>
+                                    <constraint firstAttribute="bottom" secondItem="W53-8V-sM3" secondAttribute="bottom" id="NPE-Uv-c6H"/>
+                                    <constraint firstAttribute="trailing" secondItem="W53-8V-sM3" secondAttribute="trailing" id="Z31-1s-r6p"/>
+                                    <constraint firstItem="hul-KB-spU" firstAttribute="leading" secondItem="B41-Gv-P7O" secondAttribute="leading" constant="20" id="cwz-t0-lq4"/>
+                                    <constraint firstItem="W53-8V-sM3" firstAttribute="leading" secondItem="B41-Gv-P7O" secondAttribute="leading" id="mO7-UW-3Og"/>
+                                    <constraint firstAttribute="trailing" secondItem="hul-KB-spU" secondAttribute="trailing" constant="20" id="oNF-Sf-PcQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hul-KB-spU" secondAttribute="bottom" constant="8" id="suK-t5-kwr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="B41-Gv-P7O" secondAttribute="bottom" id="8g1-vy-yUW"/>
+                            <constraint firstItem="W53-8V-sM3" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="PzC-ec-uVb"/>
+                            <constraint firstItem="B41-Gv-P7O" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="YMN-ae-5XN"/>
+                            <constraint firstItem="B41-Gv-P7O" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="fxa-KC-QMA"/>
+                            <constraint firstItem="W53-8V-sM3" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" constant="8" id="pV4-E0-4Ji"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B41-Gv-P7O" secondAttribute="trailing" constant="-20" id="x52-g7-59f"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.5" y="375.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-60" width="60" height="60"/>
+        <image name="Splash_BKG" width="414" height="736"/>
+    </resources>
+</document>
