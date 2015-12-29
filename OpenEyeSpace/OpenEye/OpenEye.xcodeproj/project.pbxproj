@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7263E9F1C301F4200277700 /* LMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7263E9E1C301F4200277700 /* LMNavigationController.m */; };
-		E7263EA31C301F9900277700 /* LMLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7263EA21C301F9900277700 /* LMLoginView.m */; };
+		E7641D1D1C32D28B00D10483 /* LMToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E7641D1C1C32D28B00D10483 /* LMToolBar.m */; };
+		E780018F1C3184E50085AC20 /* LMLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E780018E1C3184E50085AC20 /* LMLoginController.m */; };
+		E78001921C318B640085AC20 /* LMLoginContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78001911C318B640085AC20 /* LMLoginContainerController.m */; };
 		E7D55F051C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E7D55F021C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF */; };
 		E7D55F061C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E7D55F031C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF */; };
 		E7D55F071C2FAEB9005E1511 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D55F041C2FAEB9005E1511 /* Lobster 1.4.otf */; };
@@ -22,10 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E7263E9D1C301F4200277700 /* LMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMNavigationController.h; sourceTree = "<group>"; };
-		E7263E9E1C301F4200277700 /* LMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMNavigationController.m; sourceTree = "<group>"; };
-		E7263EA11C301F9900277700 /* LMLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoginView.h; sourceTree = "<group>"; };
-		E7263EA21C301F9900277700 /* LMLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoginView.m; sourceTree = "<group>"; };
+		E7641D1B1C32D28B00D10483 /* LMToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMToolBar.h; sourceTree = "<group>"; };
+		E7641D1C1C32D28B00D10483 /* LMToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMToolBar.m; sourceTree = "<group>"; };
+		E780018D1C3184E50085AC20 /* LMLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoginController.h; sourceTree = "<group>"; };
+		E780018E1C3184E50085AC20 /* LMLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoginController.m; sourceTree = "<group>"; };
+		E78001901C318B640085AC20 /* LMLoginContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoginContainerController.h; sourceTree = "<group>"; };
+		E78001911C318B640085AC20 /* LMLoginContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoginContainerController.m; sourceTree = "<group>"; };
 		E7D55F021C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		E7D55F031C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		E7D55F041C2FAEB9005E1511 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
@@ -57,19 +60,14 @@
 		E7263E9C1C301F1300277700 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E7263E9D1C301F4200277700 /* LMNavigationController.h */,
-				E7263E9E1C301F4200277700 /* LMNavigationController.m */,
+				E780018D1C3184E50085AC20 /* LMLoginController.h */,
+				E780018E1C3184E50085AC20 /* LMLoginController.m */,
+				E78001901C318B640085AC20 /* LMLoginContainerController.h */,
+				E78001911C318B640085AC20 /* LMLoginContainerController.m */,
+				E7641D1B1C32D28B00D10483 /* LMToolBar.h */,
+				E7641D1C1C32D28B00D10483 /* LMToolBar.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E7263EA01C301F7F00277700 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E7263EA11C301F9900277700 /* LMLoginView.h */,
-				E7263EA21C301F9900277700 /* LMLoginView.m */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		E7D55F011C2FAC3D005E1511 /* resourse */ = {
@@ -102,7 +100,6 @@
 		E7DCF0961C2D91F600C248F1 /* OpenEye */ = {
 			isa = PBXGroup;
 			children = (
-				E7263EA01C301F7F00277700 /* Views */,
 				E7263E9C1C301F1300277700 /* Controller */,
 				E7D55F011C2FAC3D005E1511 /* resourse */,
 				E7DCF09A1C2D91F600C248F1 /* AppDelegate.h */,
@@ -201,10 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78001921C318B640085AC20 /* LMLoginContainerController.m in Sources */,
 				E7DCF09F1C2D91F600C248F1 /* ViewController.m in Sources */,
-				E7263EA31C301F9900277700 /* LMLoginView.m in Sources */,
-				E7263E9F1C301F4200277700 /* LMNavigationController.m in Sources */,
+				E780018F1C3184E50085AC20 /* LMLoginController.m in Sources */,
 				E7D55F0A1C2FB3EE005E1511 /* LaunchView.m in Sources */,
+				E7641D1D1C32D28B00D10483 /* LMToolBar.m in Sources */,
 				E7DCF09C1C2D91F600C248F1 /* AppDelegate.m in Sources */,
 				E7DCF0991C2D91F600C248F1 /* main.m in Sources */,
 			);

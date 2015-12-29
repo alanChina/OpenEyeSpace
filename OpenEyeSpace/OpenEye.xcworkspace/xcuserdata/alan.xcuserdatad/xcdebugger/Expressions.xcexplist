@@ -3,6 +3,25 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[AppDelegate imageToTransparent:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "*pCurPtr &amp; 0x65815A00">
+            </PersistentString>
+            <PersistentString
+               value = "*pCurPtr &amp; 0x00FF0000">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__33-[ViewController leftMenuAction:]_block_invoke99:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CGRectGetMaxY(self.navigationController.navigationBar.frame)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ViewController imageToTransparent:]:ViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -22,17 +41,6 @@
             </PersistentString>
             <PersistentString
                value = "ptr[4]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[AppDelegate imageToTransparent:]:AppDelegate.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "*pCurPtr &amp; 0x65815A00">
-            </PersistentString>
-            <PersistentString
-               value = "*pCurPtr &amp; 0x00FF0000">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

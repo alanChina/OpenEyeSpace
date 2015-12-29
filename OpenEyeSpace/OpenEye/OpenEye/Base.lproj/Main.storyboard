@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Iyk-N7-ZZC">
             <objects>
-                <navigationController id="url-OO-laT" customClass="LMNavigationController" sceneMemberID="viewController">
+                <navigationController id="url-OO-laT" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DNI-ty-PfK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
