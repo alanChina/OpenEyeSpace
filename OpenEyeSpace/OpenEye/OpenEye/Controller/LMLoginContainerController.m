@@ -19,6 +19,7 @@
     self = [super initWithNavigationBarClass:navigationBarClass toolbarClass:toolbarClass];
     if (self) {
         LMLoginController *loginController = [[LMLoginController alloc] init];
+        [[loginController view] setBackgroundColor:[UIColor redColor]];
         [self setViewControllers:@[loginController]];
         [self setToolbarHidden:NO];
     }
@@ -28,15 +29,16 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 48 - 64)];
-    UIButton *hiddenBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) - 48 - 64, CGRectGetWidth(self.view.frame), 48)];
-    [hiddenBtn setTitle:@"hidden" forState:UIControlStateNormal];
-    [hiddenBtn addTarget:self action:@selector(menuAction:) forControlEvents:UIControlEventTouchUpInside];
-    [hiddenBtn setBackgroundColor:[UIColor redColor]];
-    [hiddenBtn setTag:7000];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"hdddd" style:UIBarButtonItemStylePlain target:self action:@selector(menuAction:)];
+    self.navigationBar.topItem.leftBarButtonItem = item;
+//    [self.toolbar setItems:@[item]];
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:hiddenBtn];
-    [self.toolbar setItems:@[item]];
+    UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
+    UIBarButtonItem *two = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:nil action:nil];
+    UIBarButtonItem *three = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:nil];
+    UIBarButtonItem *four = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:nil action:nil];
+    UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [self setToolbarItems:[NSArray arrayWithObjects:flexItem, one, flexItem, two, flexItem, three, flexItem, four, flexItem, nil]];
 }
 
 -(void)menuAction:(UIButton *)sender

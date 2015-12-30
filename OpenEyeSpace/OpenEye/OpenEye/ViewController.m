@@ -11,11 +11,12 @@
 #import "LMToolBar.h"
 
 @interface ViewController (){
-    UIWindow *normalWindow;
-    UIBarButtonItem *leftItem;
+    
+    LMLoginContainerController *nav2;
+    UINavigationController *nav1;
 }
 @property (nonatomic, assign) BOOL isShowed;
-@property (nonatomic, strong) LMLoginContainerController *lmLoginContainer;
+
 
 @end
 
@@ -25,87 +26,71 @@
     [super viewDidLoad];
     [[self view] setBackgroundColor:[UIColor purpleColor]];
     [self.view.window setBackgroundColor:[UIColor redColor]];
+    
     UIButton *menuBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
     [menuBtn setContentMode:UIViewContentModeLeft];
     [menuBtn setImage:[UIImage imageNamed:@"btn_menu_normal"] forState:UIControlStateNormal];
     [menuBtn setImage:[UIImage imageNamed:@"btn_menu_disabled"] forState:UIControlStateHighlighted];
     [menuBtn addTarget:self action:@selector(leftMenuAction:) forControlEvents:UIControlEventTouchUpInside];
-    leftItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"login" style:UIBarButtonItemStylePlain target:self action:@selector(rightMenuAction:)];
-    self.navigationItem.rightBarButtonItem = item;
+    UIViewController *c1 = [[UIViewController alloc] init];
+    UIButton *menuBtn0 = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 60, 44)];
+    [menuBtn0 setContentMode:UIViewContentModeLeft];
+    [menuBtn0 setImage:[UIImage imageNamed:@"btn_menu_normal"] forState:UIControlStateNormal];
+    [menuBtn0 setImage:[UIImage imageNamed:@"btn_menu_disabled"] forState:UIControlStateHighlighted];
+    [menuBtn0 addTarget:self action:@selector(lAction:) forControlEvents:UIControlEventTouchUpInside];
+    [[c1 view] addSubview:menuBtn0];
     
-    _lmLoginContainer = [[LMLoginContainerController alloc] initWithNavigationBarClass:nil toolbarClass:[LMToolBar class]];
+    [[c1 view] setBackgroundColor:[UIColor purpleColor]];
+    nav1 = [[UINavigationController alloc] initWithRootViewController:c1];
+    [self addChildViewController:nav1];
+    [nav1.view setFrame:self.view.frame];
+    [self.containerView addSubview:nav1.view];
+    [nav1 didMoveToParentViewController:self];
+    c1.navigationItem.leftBarButtonItem = leftItem;
+    
+    nav2 = [[LMLoginContainerController alloc] initWithNavigationBarClass:nil toolbarClass:[LMToolBar class]];
     __weak typeof(self) weakSelf = self;
-    [_lmLoginContainer setHiddenCallBack:^(NSInteger btnTag){
+    [nav2 setHiddenCallBack:^(NSInteger btnTag){
         [weakSelf leftMenuAction:nil];
     }];
-    normalWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetMaxY(self.navigationController.navigationBar.frame))];
-    normalWindow.backgroundColor = [UIColor blueColor];
-    normalWindow.windowLevel = UIWindowLevelNormal;
-    _lmLoginContainer.viewControllers.firstObject.navigationItem.leftBarButtonItem = leftItem;
-    [normalWindow setRootViewController:_lmLoginContainer];
-    [normalWindow makeKeyAndVisible];
-    [normalWindow setHidden:YES];
+    [self addChildViewController:nav2];
+    [nav2.view setFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds),0)];
+    [self.containerView addSubview:nav2.view];
+    [nav2 didMoveToParentViewController:self];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    
 }
 
 -(void)leftMenuAction:(id)sender
 {
     __weak typeof(self) weakSelf = self;
     if (!self.isShowed) {
-        [normalWindow setHidden:NO];
         [UIView animateWithDuration:0.5 animations:^{
-            [normalWindow setFrame:[UIScreen mainScreen].bounds];
+            [nav2.view setFrame:[UIScreen mainScreen].bounds];
         } completion:^(BOOL finished) {
             weakSelf.isShowed = YES;
         }];
         
     }else{
         [UIView animateWithDuration:0.5 animations:^{
-            [normalWindow setFrame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetMaxY(self.navigationController.navigationBar.frame))];
         } completion:^(BOOL finished) {
-            [normalWindow setHidden:YES];
             weakSelf.isShowed = NO;
         }];
     }
     
-//    if (!self.isShowed) {
-//        __weak typeof(self) weakSelf = self;
-//        
-//        [UIView animateWithDuration:0.5 animations:^{
-//            CGRect rect = weakSelf.lmLoginContainer.view.frame;
-//            rect.origin.y = 0;
-//            weakSelf.lmLoginContainer.view.frame = rect;
-//        } completion:^(BOOL finished) {
-//            weakSelf.isShowed = YES;
-//        }];
-//    }else{
-//        __weak typeof(self) weakSelf = self;
-//        [UIView animateWithDuration:0.5 animations:^{
-//            CGRect rect = weakSelf.lmLoginContainer.view.frame;
-//            rect.origin.y = -CGRectGetHeight(weakSelf.view.frame);
-//            weakSelf.lmLoginContainer.view.frame = rect;
-//        } completion:^(BOOL finished) {
-//            weakSelf.isShowed = NO;
-////            [weakSelf.lmLoginContainer willMoveToParentViewController:nil];
-////            [weakSelf.lmLoginContainer.view removeFromSuperview];
-////            [weakSelf.lmLoginContainer removeFromParentViewController];
-//        }];
-//    }
 }
 
--(void)rightMenuAction:(id)sender
+-(void)lAction:(id)sender
 {
-    UIViewController *cons = [UIViewController new];
-    [[cons view] setBackgroundColor:[UIColor grayColor]];
-    [self.navigationController pushViewController:cons animated:YES];
+    UIViewController *v = [UIViewController new];
+    [[v view] setBackgroundColor:[UIColor redColor]];
+    [nav1 pushViewController:v animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
