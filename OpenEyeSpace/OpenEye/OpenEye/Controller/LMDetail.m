@@ -7,8 +7,10 @@
 //
 
 #import "LMDetail.h"
+#import "LMHome.h"
+#import "Transition.h"
 
-@interface LMDetail ()
+@interface LMDetail ()<UINavigationControllerDelegate>
 
 @end
 
@@ -17,6 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.delegate = self;
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC
+{
+    if (fromVC == self && [toVC isKindOfClass:[LMHome class]]) {
+        return [[PopTransition alloc] init];
+    }
+    return nil;
 }
 
 - (void)didReceiveMemoryWarning {

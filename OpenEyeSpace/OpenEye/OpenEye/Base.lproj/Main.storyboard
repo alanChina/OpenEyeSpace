@@ -102,7 +102,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="7f6-97-bmA" kind="push" id="TYq-Di-gXG"/>
+                                    <segue destination="7f6-97-bmA" kind="show" id="TYq-Di-gXG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -276,11 +276,19 @@
                                     <segue destination="xVh-Rl-jsr" kind="unwind" unwindAction="unwindToHome:" id="NKz-Xw-SAB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7O-BV-Wig">
-                                <rect key="frame" x="0.0" y="14" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7O-BV-Wig">
+                                <rect key="frame" x="-4" y="44" width="383" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="rpk-Yl-3dP"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="X7O-BV-Wig" secondAttribute="trailing" constant="-20" id="7q2-WT-r7f"/>
+                            <constraint firstItem="X7O-BV-Wig" firstAttribute="top" secondItem="Hus-FP-3as" secondAttribute="bottom" id="OJT-JS-1tf"/>
+                            <constraint firstItem="X7O-BV-Wig" firstAttribute="leading" secondItem="FFb-bX-nno" secondAttribute="leadingMargin" constant="-20" id="QEl-0s-uWt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D66-ls-sgR"/>
                     <connections>

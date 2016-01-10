@@ -18,6 +18,7 @@
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIView *containerView = [transitionContext containerView];
+    [containerView setBackgroundColor:[UIColor redColor]];
     
     LMHome *fromViewContro = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     LMDetail *toViewContro = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
@@ -26,10 +27,9 @@
     
     UITableViewCell *selectCell = [[fromViewContro tableView] cellForRowAtIndexPath:[[fromViewContro tableView] indexPathsForSelectedRows].firstObject];
     UIImageView *imageView = [selectCell viewWithTag:200];
-    UIView *cellImageSnapshot = [imageView snapshotViewAfterScreenUpdates:YES];
+    UIView *cellImageSnapshot = [imageView snapshotViewAfterScreenUpdates:false];
     [cellImageSnapshot setFrame:[containerView convertRect:imageView.frame fromView:imageView.superview]];
-    [imageView setHidden:YES];
-    
+//    [imageView setHidden:YES];
     
     [toViewContro.view setFrame:[transitionContext finalFrameForViewController:toViewContro]];
     toViewContro.view.alpha = 0;
@@ -38,7 +38,8 @@
     [containerView addSubview:toViewContro.view];
     [containerView addSubview:cellImageSnapshot];
     
-    CGRect frame = [containerView convertRect:toViewContro.imageView.frame fromView:toViewContro.view];
+    CGRect frame = [containerView convertRect:toViewContro.imageView.frame fromView:toViewContro.imageView.superview];
+    frame.size.width = CGRectGetWidth([UIScreen mainScreen].bounds);
     
     [UIView animateWithDuration:duration animations:^{
         toViewContro.view.alpha = 1;
@@ -68,6 +69,32 @@
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
+    UIView *containerView = [transitionContext containerView];
+    
+    LMDetail *fromController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    LMHome *toController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    
+    NSTimeInterval duration = [self transitionDuration:transitionContext];
+    
+    UIView *imageSnapshot = [fromController.imageView snapshotViewAfterScreenUpdates:false];
+    imageSnapshot.frame = [containerView convertRect:fromController.imageView.frame fromView:fromController.imageView.superview];
+    
+    UITableViewCell *cell = [toController.tableView cellForRowAtIndexPath:[toController.tableView indexPathForSelectedRow]];
+    UIImageView *imageView = [cell viewWithTag:200];
+    toController.view.frame = [transitionContext finalFrameForViewController:toController];
+    [containerView insertSubview:toController.view belowSubview:fromController.view];
+    [containerView addSubview:imageSnapshot];
+    
+    [UIView animateWithDuration:duration animations:^{
+        fromController.view.alpha = 0;
+        imageSnapshot.frame = [containerView convertRect:imageView.frame fromView:imageView.superview];
+        
+    } completion:^(BOOL finished) {
+        [imageSnapshot removeFromSuperview];
+        fromController.imageView.hidden = NO;
+        imageView.hidden = NO;
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    }];
     
 }
 
