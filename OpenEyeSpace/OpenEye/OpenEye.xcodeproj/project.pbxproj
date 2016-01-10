@@ -8,27 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		E7641D1D1C32D28B00D10483 /* LMToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E7641D1C1C32D28B00D10483 /* LMToolBar.m */; };
-		E780018F1C3184E50085AC20 /* LMLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E780018E1C3184E50085AC20 /* LMLoginController.m */; };
-		E78001921C318B640085AC20 /* LMLoginContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E78001911C318B640085AC20 /* LMLoginContainerController.m */; };
+		E76A5ECB1C41F665008CFC15 /* Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = E76A5ECA1C41F665008CFC15 /* Transition.m */; };
+		E76A5ECD1C4208BC008CFC15 /* thing01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E76A5ECC1C4208BC008CFC15 /* thing01.jpg */; };
 		E7D55F051C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E7D55F021C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF */; };
 		E7D55F061C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E7D55F031C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF */; };
 		E7D55F071C2FAEB9005E1511 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D55F041C2FAEB9005E1511 /* Lobster 1.4.otf */; };
 		E7D55F0A1C2FB3EE005E1511 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D55F091C2FB3EE005E1511 /* LaunchView.m */; };
 		E7DCF0991C2D91F600C248F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DCF0981C2D91F600C248F1 /* main.m */; };
 		E7DCF09C1C2D91F600C248F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DCF09B1C2D91F600C248F1 /* AppDelegate.m */; };
-		E7DCF09F1C2D91F600C248F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DCF09E1C2D91F600C248F1 /* ViewController.m */; };
 		E7DCF0A21C2D91F600C248F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DCF0A01C2D91F600C248F1 /* Main.storyboard */; };
 		E7DCF0A41C2D91F600C248F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7DCF0A31C2D91F600C248F1 /* Assets.xcassets */; };
 		E7DCF0A71C2D91F600C248F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DCF0A51C2D91F600C248F1 /* LaunchScreen.storyboard */; };
+		E7EB5CA81C41318F003147E8 /* LMBaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5CA71C41318F003147E8 /* LMBaseTable.m */; };
+		E7EB5CAB1C413604003147E8 /* LMAnimationPresentationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5CAA1C413604003147E8 /* LMAnimationPresentationSegue.m */; };
+		E7EB5CAF1C41463A003147E8 /* LMDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5CAE1C41463A003147E8 /* LMDetail.m */; };
+		E7F18D401C369125006A92EB /* LMUCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F18D3F1C369125006A92EB /* LMUCenter.m */; };
+		E7F18D431C36A96D006A92EB /* LMHome.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F18D421C36A96D006A92EB /* LMHome.m */; };
+		E7F18D4C1C36AD38006A92EB /* LMRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F18D4B1C36AD38006A92EB /* LMRoot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7641D1B1C32D28B00D10483 /* LMToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMToolBar.h; sourceTree = "<group>"; };
 		E7641D1C1C32D28B00D10483 /* LMToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMToolBar.m; sourceTree = "<group>"; };
-		E780018D1C3184E50085AC20 /* LMLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoginController.h; sourceTree = "<group>"; };
-		E780018E1C3184E50085AC20 /* LMLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoginController.m; sourceTree = "<group>"; };
-		E78001901C318B640085AC20 /* LMLoginContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoginContainerController.h; sourceTree = "<group>"; };
-		E78001911C318B640085AC20 /* LMLoginContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoginContainerController.m; sourceTree = "<group>"; };
+		E76A5EC91C41F665008CFC15 /* Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transition.h; sourceTree = "<group>"; };
+		E76A5ECA1C41F665008CFC15 /* Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transition.m; sourceTree = "<group>"; };
+		E76A5ECC1C4208BC008CFC15 /* thing01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing01.jpg; sourceTree = "<group>"; };
 		E7D55F021C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		E7D55F031C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		E7D55F041C2FAEB9005E1511 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
@@ -38,12 +42,23 @@
 		E7DCF0981C2D91F600C248F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7DCF09A1C2D91F600C248F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7DCF09B1C2D91F600C248F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E7DCF09D1C2D91F600C248F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E7DCF09E1C2D91F600C248F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7DCF0A11C2D91F600C248F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7DCF0A31C2D91F600C248F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7DCF0A61C2D91F600C248F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DCF0A81C2D91F600C248F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7EA94491C37682A0082BE12 /* LMLeftItemAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLeftItemAction.h; sourceTree = "<group>"; };
+		E7EB5CA61C41318F003147E8 /* LMBaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMBaseTable.h; sourceTree = "<group>"; };
+		E7EB5CA71C41318F003147E8 /* LMBaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMBaseTable.m; sourceTree = "<group>"; };
+		E7EB5CA91C413604003147E8 /* LMAnimationPresentationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAnimationPresentationSegue.h; sourceTree = "<group>"; };
+		E7EB5CAA1C413604003147E8 /* LMAnimationPresentationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAnimationPresentationSegue.m; sourceTree = "<group>"; };
+		E7EB5CAD1C41463A003147E8 /* LMDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMDetail.h; sourceTree = "<group>"; };
+		E7EB5CAE1C41463A003147E8 /* LMDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMDetail.m; sourceTree = "<group>"; };
+		E7F18D3E1C369125006A92EB /* LMUCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMUCenter.h; sourceTree = "<group>"; };
+		E7F18D3F1C369125006A92EB /* LMUCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMUCenter.m; sourceTree = "<group>"; };
+		E7F18D411C36A96D006A92EB /* LMHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHome.h; sourceTree = "<group>"; };
+		E7F18D421C36A96D006A92EB /* LMHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHome.m; sourceTree = "<group>"; };
+		E7F18D4A1C36AD38006A92EB /* LMRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRoot.h; sourceTree = "<group>"; };
+		E7F18D4B1C36AD38006A92EB /* LMRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMRoot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +75,23 @@
 		E7263E9C1C301F1300277700 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E780018D1C3184E50085AC20 /* LMLoginController.h */,
-				E780018E1C3184E50085AC20 /* LMLoginController.m */,
-				E78001901C318B640085AC20 /* LMLoginContainerController.h */,
-				E78001911C318B640085AC20 /* LMLoginContainerController.m */,
 				E7641D1B1C32D28B00D10483 /* LMToolBar.h */,
 				E7641D1C1C32D28B00D10483 /* LMToolBar.m */,
+				E7F18D3E1C369125006A92EB /* LMUCenter.h */,
+				E7F18D3F1C369125006A92EB /* LMUCenter.m */,
+				E7F18D411C36A96D006A92EB /* LMHome.h */,
+				E7F18D421C36A96D006A92EB /* LMHome.m */,
+				E7F18D4A1C36AD38006A92EB /* LMRoot.h */,
+				E7F18D4B1C36AD38006A92EB /* LMRoot.m */,
+				E7EA94491C37682A0082BE12 /* LMLeftItemAction.h */,
+				E7EB5CA61C41318F003147E8 /* LMBaseTable.h */,
+				E7EB5CA71C41318F003147E8 /* LMBaseTable.m */,
+				E7EB5CA91C413604003147E8 /* LMAnimationPresentationSegue.h */,
+				E7EB5CAA1C413604003147E8 /* LMAnimationPresentationSegue.m */,
+				E7EB5CAD1C41463A003147E8 /* LMDetail.h */,
+				E7EB5CAE1C41463A003147E8 /* LMDetail.m */,
+				E76A5EC91C41F665008CFC15 /* Transition.h */,
+				E76A5ECA1C41F665008CFC15 /* Transition.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -73,6 +99,7 @@
 		E7D55F011C2FAC3D005E1511 /* resourse */ = {
 			isa = PBXGroup;
 			children = (
+				E76A5ECC1C4208BC008CFC15 /* thing01.jpg */,
 				E7D55F021C2FAEB9005E1511 /* FZLTXIHJW--GB1-0.TTF */,
 				E7D55F031C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF */,
 				E7D55F041C2FAEB9005E1511 /* Lobster 1.4.otf */,
@@ -104,8 +131,6 @@
 				E7D55F011C2FAC3D005E1511 /* resourse */,
 				E7DCF09A1C2D91F600C248F1 /* AppDelegate.h */,
 				E7DCF09B1C2D91F600C248F1 /* AppDelegate.m */,
-				E7DCF09D1C2D91F600C248F1 /* ViewController.h */,
-				E7DCF09E1C2D91F600C248F1 /* ViewController.m */,
 				E7DCF0A01C2D91F600C248F1 /* Main.storyboard */,
 				E7DCF0A31C2D91F600C248F1 /* Assets.xcassets */,
 				E7DCF0A51C2D91F600C248F1 /* LaunchScreen.storyboard */,
@@ -182,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76A5ECD1C4208BC008CFC15 /* thing01.jpg in Resources */,
 				E7DCF0A71C2D91F600C248F1 /* LaunchScreen.storyboard in Resources */,
 				E7D55F061C2FAEB9005E1511 /* FZLTZCHJW--GB1-0.TTF in Resources */,
 				E7DCF0A41C2D91F600C248F1 /* Assets.xcassets in Resources */,
@@ -198,13 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78001921C318B640085AC20 /* LMLoginContainerController.m in Sources */,
-				E7DCF09F1C2D91F600C248F1 /* ViewController.m in Sources */,
-				E780018F1C3184E50085AC20 /* LMLoginController.m in Sources */,
+				E7F18D4C1C36AD38006A92EB /* LMRoot.m in Sources */,
+				E7F18D401C369125006A92EB /* LMUCenter.m in Sources */,
 				E7D55F0A1C2FB3EE005E1511 /* LaunchView.m in Sources */,
+				E7EB5CAB1C413604003147E8 /* LMAnimationPresentationSegue.m in Sources */,
 				E7641D1D1C32D28B00D10483 /* LMToolBar.m in Sources */,
+				E76A5ECB1C41F665008CFC15 /* Transition.m in Sources */,
+				E7EB5CAF1C41463A003147E8 /* LMDetail.m in Sources */,
+				E7F18D431C36A96D006A92EB /* LMHome.m in Sources */,
 				E7DCF09C1C2D91F600C248F1 /* AppDelegate.m in Sources */,
 				E7DCF0991C2D91F600C248F1 /* main.m in Sources */,
+				E7EB5CA81C41318F003147E8 /* LMBaseTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

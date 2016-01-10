@@ -9,6 +9,7 @@
 #import "LMToolBar.h"
 
 @implementation LMToolBar
+
 -(CGSize)intrinsicContentSize {
     return CGSizeMake(UIViewNoIntrinsicMetric, 85);
 }
@@ -17,4 +18,10 @@
     result.height = 65;
     return result;
 };
+
+-(void)setItems:(NSArray<UIBarButtonItem *> *)items
+{
+    
+}
+
 @end
